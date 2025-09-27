@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>বাণী মন্দির ক্লাব</title>
+  <title>Club Website</title>
   <style>
     body, html {
       margin: 0;
@@ -105,30 +105,34 @@
       100% { color: #FFD700; }
     }
 
-    /* Bottom Buttons */
+    /* Bottom Buttons Layout */
     .bottom-buttons {
       position: absolute;
       bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
     }
     .bottom-buttons a {
+      flex: 1;
       margin: 0 10px;
       padding: 14px 24px;
       color: white;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
+      text-align: center;
       transition: 0.3s;
     }
     .bottom-buttons a:nth-child(1) {
-      background: #e63946;
+      background: #e63946; /* Red */
     }
     .bottom-buttons a:nth-child(2) {
-      background: #457b9d;
+      background: #457b9d; /* Blue */
     }
     .bottom-buttons a:nth-child(3) {
-      background: #2a9d8f;
+      background: #2a9d8f; /* Green */
     }
     .bottom-buttons a:hover {
       opacity: 0.8;
@@ -147,11 +151,11 @@
   <div class="navbar">
     <span class="menu-btn">☰</span>
     <div class="menu">
-      <a href="link1.html">পূজা কমিটি</a>
-      <a href="#">ভবিষ্যৎ পরিকল্পনায়</a>
+      <a href="comity.html">পূজা কমিটি</a>
+      <a href="feature.html">ভবিষ্যৎ পরিকল্পনায়</a>
       <a id="memberPortal">সদস্য পোর্টাল</a>
       <a href="#">খেলাধূলা ও সাংস্কৃতিক অনুষ্ঠান</a>
-      <a href="#">যোগাযোগ</a>
+      <a href="contact.html">যোগাযোগ</a>
     </div>
   </div>
 
@@ -163,9 +167,9 @@
 
   <!-- Bottom Buttons -->
   <div class="bottom-buttons">
-    <a href="linkA.html">Saraswati Puja</a>
-    <a href="linkB.html">Durga Puja</a>
-    <a href="linkC.html">Laxmi Puja</a>
+    <a href="linkA.html">Saraswati Puja ✨ সরস্বতীপূজা </a>
+    <a href="linkB.html">Durga Puja ✨ দূর্গা পূজা</a>
+    <a href="linkC.html">Laxmi Puja ✨ লক্ষী পূজা</a>
   </div>
 
   <script>
@@ -188,7 +192,7 @@
     document.getElementById("memberPortal").addEventListener("click", () => {
       let code = prompt("🔒 Enter Access Code:");
       if(code === "BMC333"){
-        window.location.href = "member.html"; // your member portal page
+        window.location.href = "member.html";
       } else if (code !== null) {
         alert("❌ Wrong Code! Access Denied.");
       }
