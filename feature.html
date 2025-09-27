@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature - Bani Mondir Club</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: "SolaimanLipi", Arial, sans-serif;
+      background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585, #ffb703);
+      background-size: 400% 400%;
+      animation: bgShift 12s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes bgShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .header {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 36px;
+      font-weight: bold;
+      color: gold;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .speech-box {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s;
+    }
+
+    .speech-box:hover {
+      transform: scale(1.03);
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #ffdd57;
+      text-align: center;
+    }
+
+    .content {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* Back button */
+    .back-home {
+      display: block;
+      width: fit-content;
+      margin: 40px auto;
+      padding: 12px 25px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #3a0ca3;
+      background: white;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .back-home:hover {
+      background: #ffdd57;
+      color: #000;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">✨ বিশেষ ভাবনা ✨</div>
+
+  <div class="container">
+    <div class="speech-box">
+      <div class="title">সভাপতির ভাবনায়</div>
+      <div class="content">
+        সভাপতির বক্তব্য 
+      </div>
+    </div>
+
+    <div class="speech-box">
+      <div class="title">সাধারণ সম্পাদকের ভাবনায়</div>
+      <div class="content">
+         বক্তব্য 
+      </div>
+    </div>
+
+    <div class="speech-box">
+      <div class="title">অন্য সদস্যের ভাবনায়</div>
+      <div class="content">
+       চাইলে একাধিক বাক্স যোগ করা সম্ভব।
+      </div>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-home">🏠 Back to Home</a>
+</body>
+</html>
